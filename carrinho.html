@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="pt-br" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Lucas Wenderson">
+    <meta name="description" content="Gameshop site project">
+    <title>Playpoint Palace</title>
+    <link rel="icon" href="assets/logo.png" type="image/x-icon">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body style="background: linear-gradient(to right, #ffffff, #f3f3f3);">
+    <header data-bs-theme="dark">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark px-3 py-4" >
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="assets/logo.png" alt="logo" class="rounded-circle me-3" style="height: 40px;">
+            <span class="fw-bold text-white">Playpoint Palace</span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="carrinho.html">Carrinho</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <div class="container">
+      <main>
+        <div class="py-lg-5 text-center ">
+          <img src="assets/logo.png" alt="logo" class="rounded-circle me-3" style="height: 100px;">
+          <h2 class="fw-bold">Formulario de Checkout </h2>
+          <p class="lead fw-normal">Complete o formulário abaixo para finalizar sua compra.</p>
+        </div>
+
+        <div class="row g-5">
+          <div class="col-md-5 col-lg-4 order-md-last">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+              <span class="text-success">Seu Carrinho</span>
+              <span class="badge bg-success rounded-pill">3</span>
+            </h4>
+
+            <ul class="list-group mb-3">
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Assassin's Creed Mirage</h6>
+                  <small class="text-body-secondary">Xbox Game</small>
+                </div>
+                <span class="text-body-secondary">R$ 270,00</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Game Pass Ultimate 1 Mes</h6>
+                  <small class="text-body-secondary">Xbox Subscription</small>
+                </div>
+                <span class="text-body-secondary">R$ 45,99</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Super Mario Wonder</h6>
+                  <small class="text-body-secondary">Nintendo Game</small>
+                </div>
+                <span class="text-body-secondary">R$ 350,00</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
+                <div class="text-success">
+                  <h6 class="my-0">Codigo Promocional</h6>
+                  <small>ADATECH</small>
+                </div>
+                <span class="text-success">−R$45,99</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Total (BRL)</span>
+                <strong>R$620</strong>
+              </li>
+            </ul>
+
+            <form class="card p-2">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Codigo Promocional">
+                <button type="submit" class="btn btn-secondary">Resgatar</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-7 col-lg-8">
+            <h4 class="mb-3">Cobrança</h4>
+            <form class="needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">Primeiro nome</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                  <div class="invalid-feedback">
+                    Nome valido necessario
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label">Ultimo nome</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                  <div class="invalid-feedback">
+                    Nome valido necessario
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                  <div class="invalid-feedback">
+                    Email valido necessario
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="address" class="form-label">Endereco</label>
+                  <input type="text" class="form-control" id="address" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Endereço valido necessario
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="address2" class="form-label">Complemento <span class="text-body-secondary">(Optional)</span></label>
+                  <input type="text" class="form-control" id="address2" placeholder="">
+                </div>
+
+                <div class="col-md-5">
+                  <label for="country" class="form-label">Pais</label>
+                  <select class="form-select" id="country" required>
+                    <option selected disabled>Escolha...</option>
+                    <option>Brasil</option>
+                    <option>EUA</option>
+                    <option>Japão</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Selecione um pais 
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <label for="state" class="form-label">Estado</label>
+                  <select class="form-select" id="state" required>
+                    <option selected disabled>Escolha...</option>
+                    <option>PA</option>
+                    <option>RJ</option>
+                    <option>SP</option>
+                    <option>CE</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Selecione um Estado
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="zip" class="form-label">CEP</label>
+                  <input type="text" class="form-control" id="zip" placeholder="" required>
+                  <div class="invalid-feedback">
+                    CEP valido necessario
+                  </div>
+                </div>
+              </div>
+
+              <hr class="my-4">
+
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="same-address">
+                <label class="form-check-label" for="same-address">Endereço de entrega é o mesmo endereço de cobrança</label>
+              </div>
+
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="save-info">
+                <label class="form-check-label" for="save-info">Salve essas informações para proxima vez</label>
+              </div>
+
+              <hr class="my-4">
+
+              <h4 class="mb-3">Forma de pagamento</h4>
+
+              <div class="my-3">
+                <div class="form-check">
+                  <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                  <label class="form-check-label" for="credit">Cartão de Credito</label>
+                </div>
+                <div class="form-check">
+                  <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="debit">Boleto</label>
+                </div>
+                <div class="form-check">
+                  <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="paypal">PIX</label>
+                </div>
+              </div>
+
+              <div class="row gy-3">
+                <div class="col-md-6">
+                  <label for="cc-name" class="form-label">Nome no cartão</label>
+                  <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                  <small class="text-body-secondary">Nome completo que nem o mostado no cartão</small>
+                  <div class="invalid-feedback">
+                    Nome valido é necessario
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="cc-number" class="form-label">Numero do cartão</label>
+                  <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Numero do cartão valido é necessario
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="cc-expiration" class="form-label">Data de validade</label>
+                  <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Expiration date required
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="cc-cvv" class="form-label">CVV</label>
+                  <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Security code required
+                  </div>
+                </div>
+              </div>
+
+              <hr class="my-4">
+
+              <button class="w-100 btn btn-success btn-lg" type="submit">Continue para o checkout</button>
+            </form>
+          </div>
+        </div>
+      </main>
+
+      <footer class="container d-flex flex-wrap justify-content-between align-items-center py-4 my-4 border-top">
+        <p class="col-md-4 mb-0 fw-bold text-body-secondary">&copy; 2023 Lucas Wenderson</p>
+      
+        <img src="assets/logo.png" alt="logo" class="rounded-circle me-3" style="height: 40px;">
+      
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item">
+            <a href="https://www.linkedin.com/in/lucas-wenderson/" target="_blank" class="nav-link px-2 fw-bold text-body-secondary">
+              <i class="bi bi-linkedin"></i> LinkedIn
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/lucaswenderson" target="_blank" class="nav-link px-2 fw-bold text-body-secondary">
+              <i class="bi bi-github"></i> GitHub
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

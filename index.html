@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="pt-br" data-bs-theme="auto">
+  <head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Lucas Wenderson">
+    <meta name="description" content="Gameshop site project">
+    <title>Playpoint Palace</title>
+    <link rel="icon" href="assets/logo.png" type="image/x-icon">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body>    
+    <header data-bs-theme="dark">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark px-3 py-4" >
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="assets/logo.png" alt="logo" class="rounded-circle me-3" style="height: 40px;">
+            <span class="fw-bold text-white">Playpoint Palace</span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="carrinho.html">Carrinho</a>
+              </li>
+            </ul>
+            
+            <div>
+              <a class="btn btn-outline-success me-3 fw-medium" href="/login.html" role="button">Entrar</a>
+              <a class="btn btn-success fw-medium" href="/registro.html" role="button">Registrar</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+
+    <main>
+      <div class="py-5 parallax-section d-flex justify-content-center align-items-center">
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto text-placeholder">
+                    <h1 class="fw-bold text-white">Bem-vindo ao Playpoint Palace</h1>
+                    <p class="lead fw-normal text-white">A sua loja favorita de jogos, consoles e acessórios. Encontre as melhores ofertas e lançamentos aqui.</p>
+                    <a href="#myCarousel" class="btn-scroll-down mt-4"> <i class="bi bi-arrow-down"></i></a>
+                  </div>
+            </div>
+        </section>
+      </div>
+    
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/acm-1.jpeg" alt="Assassins Creed Mirage Cover" class="img-fluid" >
+            <div class="container">
+              <div class="carousel-caption text-start text-placeholder">
+                <h1>Novo Lançamento: Assassins Creed Mirage.</h1>
+                <p>Explore um novo mundo misterioso com Assassins Creed Mirage. Disponível agora para todas as plataformas!</p>
+                <p><a class="btn btn-lg btn-success fw-medium" href="carrinho.html">Compre Aqui</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/star-1.jpg" alt="Starfield Cover" class="img-fluid" >
+            <div class="container">
+              <div class="carousel-caption text-placeholder">
+                <h1>Descubra o Espaço com Starfield</h1>
+                <p>Uma jornada épica pelo espaço aguarda você em Starfield. Não perca esse lançamento incrível!</p>
+                <p><a class="btn btn-lg btn-success fw-medium" href="carrinho.html">Compre Aqui</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/gp-1.jpg" alt="Gamepass Cover" class="img-fluid" >
+            <div class="container">
+              <div class="carousel-caption text-end text-placeholder">
+                <h1>Promoção Especial: Game Pass com desconto!</h1>
+                <p>Aproveite nosso desconto exclusivo e tenha acesso a centenas de jogos com o Game Pass. Oferta válida por tempo limitado</p>
+                <p><a class="btn btn-lg btn-success fw-medium" href="carrinho.html">Compre Aqui</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <section class="container my-4 d-flex justify-content-between align-items-center">
+        <div class="input-group me-auto" style="max-width: 40%;">
+          <span class="input-group-text" style="border: none; border-bottom: 1px solid #ccc;">Pesquise um jogo:</span>
+          <input type="text" class="form-control" style="border: none; border-bottom: 1px solid #ccc;" placeholder="Entre com o nome do jogo">
+        </div>
+        
+        <div class="input-group ms-auto" style="max-width: 40%;">
+          <label class="input-group-text" style="border: none; border-bottom: 1px solid #ccc;" for="platformSelect">Plataforma:</label>
+          <select class="form-select" style="border: none; border-bottom: 1px solid #ccc;" id="platformSelect">
+            <option selected disabled>Selecione</option>
+            <option value="xbox">Xbox</option>
+            <option value="pc">PC</option>
+            <option value="playstation">PlayStation</option>
+            <option value="nintendo">Nintendo</option>
+          </select>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col zoom-on-hover">
+                <div class="card shadow-sm">
+                    <img src="assets/lp-1.jpg" class="card-img-top" alt="Lies of Pi">
+                    <div class="card-body">
+                        <h5 class="card-title">Lies of Pi</h5>
+                        <p class="card-text">Uma jornada emocionante que desafia as percepções da realidade. Acompanhe Pi, um jovem aventureiro, enquanto ele embarca em uma missão para descobrir a verdade oculta em um mundo cheio de mistérios e ilusões.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="carrinho.html" role="button" class="btn btn-sm btn-outline-success fw-medium">Comprar</a>
+                            <small class="text-muted">PC/XBOX/PS</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col zoom-on-hover">
+                <div class="card shadow-sm">
+                    <img src="assets/lotf-1.webp" class="card-img-top" alt="Lords of the Fallen (2023)">
+                    <div class="card-body">
+                        <h5 class="card-title">Lords of the Fallen (2023)</h5>
+                        <p class="card-text">Neste épico de ação e aventura, você é um guerreiro amaldiçoado lutando contra forças demoníacas. Com um sistema de combate estratégico e um mundo aberto expansivo, o destino do reino está em suas mãos.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <a href="carrinho.html" role="button" class="btn btn-sm btn-outline-success fw-medium">Comprar</a>
+                          <small class="text-muted">PC/XBOX/PS</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col zoom-on-hover">
+                <div class="card shadow-sm">
+                    <img src="assets/sos-1.jpeg" class="card-img-top" alt="Sea of Stars">
+                    <div class="card-body">
+                        <h5 class="card-title">Sea of Stars</h5>
+                        <p class="card-text">Navegue pelos mares estelares em uma aventura cósmica que desafia o tempo. Com um enredo envolvente e um mundo vibrante, você encontrará aliados e inimigos enquanto busca o destino final.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="carrinho.html" role="button" class="btn btn-sm btn-outline-success fw-medium">Comprar</a>
+                          <small class="text-muted">PC/XBOX/PS</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col zoom-on-hover">
+              <div class="card shadow-sm">
+                  <img src="assets/lp-1.jpg" class="card-img-top" alt="Lies of Pi">
+                  <div class="card-body">
+                      <h5 class="card-title">Lies of Pi</h5>
+                      <p class="card-text">Uma jornada emocionante que desafia as percepções da realidade. Acompanhe Pi, um jovem aventureiro, enquanto ele embarca em uma missão para descobrir a verdade oculta em um mundo cheio de mistérios e ilusões.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                          <a href="carrinho.html" role="button" class="btn btn-sm btn-outline-success fw-medium">Comprar</a>
+                          <small class="text-muted">PC/XBOX/PS</small>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col zoom-on-hover">
+              <div class="card shadow-sm">
+                  <img src="assets/lotf-1.webp" class="card-img-top" alt="Lords of the Fallen (2023)">
+                  <div class="card-body">
+                      <h5 class="card-title">Lords of the Fallen (2023)</h5>
+                      <p class="card-text">Neste épico de ação e aventura, você é um guerreiro amaldiçoado lutando contra forças demoníacas. Com um sistema de combate estratégico e um mundo aberto expansivo, o destino do reino está em suas mãos.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <a href="carrinho.html" role="button" class="btn btn-sm btn-outline-success fw-medium">Comprar</a>
+                        <small class="text-muted">PC/XBOX/PS</small>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col zoom-on-hover">
+              <div class="card shadow-sm">
+                  <img src="assets/sos-1.jpeg" class="card-img-top" alt="Sea of Stars">
+                  <div class="card-body">
+                      <h5 class="card-title">Sea of Stars</h5>
+                      <p class="card-text">Navegue pelos mares estelares em uma aventura cósmica que desafia o tempo. Com um enredo envolvente e um mundo vibrante, você encontrará aliados e inimigos enquanto busca o destino final.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                          <a href="carrinho.html" role="button" class="btn btn-sm btn-outline-success fw-medium">Comprar</a>
+                        <small class="text-muted">PC/XBOX/PS</small>
+                      </div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col zoom-on-hover">
+              <div class="card shadow-sm">
+                  <img src="assets/lp-1.jpg" class="card-img-top" alt="Lies of Pi">
+                  <div class="card-body">
+                      <h5 class="card-title">Lies of Pi</h5>
+                      <p class="card-text">Uma jornada emocionante que desafia as percepções da realidade. Acompanhe Pi, um jovem aventureiro, enquanto ele embarca em uma missão para descobrir a verdade oculta em um mundo cheio de mistérios e ilusões.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                          <a href="carrinho.html" role="button" class="btn btn-sm btn-outline-success fw-medium">Comprar</a>
+                          <small class="text-muted">PC/XBOX/PS</small>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col zoom-on-hover">
+              <div class="card shadow-sm">
+                  <img src="assets/lotf-1.webp" class="card-img-top" alt="Lords of the Fallen (2023)">
+                  <div class="card-body">
+                      <h5 class="card-title">Lords of the Fallen (2023)</h5>
+                      <p class="card-text">Neste épico de ação e aventura, você é um guerreiro amaldiçoado lutando contra forças demoníacas. Com um sistema de combate estratégico e um mundo aberto expansivo, o destino do reino está em suas mãos.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <a href="carrinho.html" role="button" class="btn btn-sm btn-outline-success fw-medium">Comprar</a>
+                        <small class="text-muted">PC/XBOX/PS</small>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col zoom-on-hover">
+              <div class="card shadow-sm">
+                  <img src="assets/sos-1.jpeg" class="card-img-top" alt="Sea of Stars">
+                  <div class="card-body">
+                      <h5 class="card-title">Sea of Stars</h5>
+                      <p class="card-text">Navegue pelos mares estelares em uma aventura cósmica que desafia o tempo. Com um enredo envolvente e um mundo vibrante, você encontrará aliados e inimigos enquanto busca o destino final.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                          <a href="carrinho.html" role="button" class="btn btn-sm btn-outline-success fw-medium">Comprar</a>
+                        <small class="text-muted">PC/XBOX/PS</small>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-5 parallax-section d-flex justify-content-center align-items-center" style="height: 70vh;">
+        <section class="text-center container text-placeholder">
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <h3 class="fw-bold text-white">Sobre Nós</h3>
+              <p class="lead fw-normal text-white">Fundada em 2023, a Playpoint Palace se dedica a oferecer aos gamers não apenas os jogos mais atuais, mas também clássicos que todos amam. Nossa missão é enriquecer sua experiência de jogo.</p>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <h3 class="fw-bold text-white">Confiança e Segurança</h3>
+              <img src="assets/ssl-certificate.png" alt="Certificação de Segurança" class="zoom-on-hover" >
+              <img src="assets/quality-certificate.png" alt="Prêmio de Qualidade" class="zoom-on-hover mt-4">
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="container d-flex flex-wrap justify-content-between align-items-center py-4 my-4 border-top">
+      <p class="col-md-4 mb-0 fw-bold text-body-secondary">&copy; 2023 Lucas Wenderson</p>
+    
+      <img src="assets/logo.png" alt="logo" class="rounded-circle me-3" style="height: 40px;">
+    
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item">
+          <a href="https://www.linkedin.com/in/lucas-wenderson/" target="_blank" class="nav-link px-2 fw-bold text-body-secondary">
+            <i class="bi bi-linkedin"></i> LinkedIn
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="https://github.com/lucaswenderson" target="_blank" class="nav-link px-2 fw-bold text-body-secondary">
+            <i class="bi bi-github"></i> GitHub
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
